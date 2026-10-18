@@ -3,28 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Politique de confidentialité – eToro Monitoring Backup</title>
-<style>body{font-family:system-ui,sans-serif;max-width:46rem;margin:3rem auto;padding:0 1rem;line-height:1.5;color:#222}h1{font-size:1.6rem}footer{margin-top:3rem;font-size:.9rem;color:#666}</style>
+<title>Politique de confidentialité — eToro Monitoring Backup</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#222}h1{font-size:1.5rem}footer{margin-top:2rem;font-size:.9rem;color:#555}</style>
 </head>
 <body>
 <h1>Politique de confidentialité</h1>
-<p>Application : <strong>eToro Monitoring Backup</strong> (<a href="index.html">page d'accueil</a>). Outil personnel, non commercial, dont l'auteur est le seul utilisateur.</p>
+<p>Application : <strong>eToro Monitoring Backup</strong>, outil personnel de sauvegarde chiffrée vers Google Drive. Un seul utilisateur : son auteur. Cette politique décrit l'usage fait des données Google auxquelles l'application accède.</p>
+
 <h2>1. Données Google auxquelles l'application accède</h2>
-<p>L'application demande uniquement la portée Google Drive <code>https://www.googleapis.com/auth/drive.file</code>. Cette portée lui permet de créer des fichiers et des dossiers dans le Google Drive de l'utilisateur qui l'a autorisée, et de lire ou de modifier seulement les fichiers qu'elle a elle-même créés. Elle n'accède à aucun autre fichier du Drive, ni au profil, aux contacts, au courrier ou à tout autre service Google.</p>
+<p>L'application demande uniquement la portée OAuth <code>https://www.googleapis.com/auth/drive.file</code>. Cette portée l'autorise à créer des fichiers dans le Google Drive de l'utilisateur et à lire, vérifier ou lister les seuls fichiers qu'elle a elle-même créés. Elle n'a accès à aucun autre fichier, dossier ou information du compte Google.</p>
+
 <h2>2. Utilisation des données</h2>
-<p>Les données Google sont utilisées exclusivement pour déposer des archives de sauvegarde dans le Drive de l'utilisateur, en vérifier l'intégrité après transfert et en dresser l'inventaire. Les archives sont chiffrées avant l'envoi ; leur contenu n'est pas lisible par Google ni par un tiers.</p>
+<ul>
+  <li>Déposer des archives de sauvegarde, chiffrées avant l'envoi, dans un dossier dédié du Drive de l'utilisateur.</li>
+  <li>Relire ces archives après le dépôt pour en vérifier l'intégrité (taille, empreinte).</li>
+  <li>Lister ce dossier pour établir un inventaire des sauvegardes et consulter l'espace disponible.</li>
+</ul>
+<p>Aucune autre utilisation. Les données ne servent ni à de la publicité, ni à du profilage, ni à l'entraînement de modèles.</p>
+
 <h2>3. Stockage</h2>
-<p>Les fichiers sont stockés uniquement dans le Google Drive de l'utilisateur. Le jeton d'autorisation OAuth est conservé par l'utilisateur dans ses propres outils (configuration locale et coffre de secrets d'automatisation) et n'est transmis à aucun service tiers.</p>
-<h2>4. Partage</h2>
-<p>Aucune donnée Google n'est partagée, vendue, transférée ni communiquée à qui que ce soit. L'application n'utilise aucun service d'analyse, de publicité ni de suivi.</p>
+<p>Les archives sont stockées uniquement dans le Google Drive de l'utilisateur. Le jeton d'accès OAuth est conservé dans un coffre de secrets chiffré, sous le contrôle exclusif de l'utilisateur, et n'est jamais écrit dans un journal, un fichier public ou une archive.</p>
+
+<h2>4. Partage et transfert</h2>
+<p>Aucune donnée n'est partagée, vendue, louée ni transmise à un tiers, à quelque fin que ce soit. L'application n'utilise aucun service d'analyse d'audience ni aucun traceur.</p>
+
 <h2>5. Conservation et suppression</h2>
-<p>Les archives restent dans le Drive de l'utilisateur jusqu'à ce qu'il les supprime lui-même. L'accès de l'application peut être révoqué à tout moment depuis la page <a href="https://myaccount.google.com/permissions">Applications tierces ayant accès à votre compte</a> ; la révocation rend immédiatement le jeton inutilisable.</p>
-<h2>6. Engagement</h2>
-<p>L'utilisation des données obtenues via les API Google respecte la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, y compris les exigences d'utilisation limitée (Limited Use).</p>
+<p>Les archives restent dans le Drive de l'utilisateur jusqu'à ce qu'il les supprime lui-même. L'utilisateur peut à tout moment retirer l'accès de l'application depuis <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> ; l'application perd alors immédiatement toute capacité d'accès.</p>
+
+<h2>6. Conformité</h2>
+<p>L'utilisation des informations reçues des API Google respecte la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, y compris les exigences d'usage limité (Limited Use).</p>
+
 <h2>7. Contact</h2>
-<p>Auteur : <a href="https://github.com/FrancoisMaillat">FrancoisMaillat</a> sur GitHub.</p>
-<hr>
-<p lang="en"><em>English summary.</em> eToro Monitoring Backup requests only the Google Drive <code>drive.file</code> scope. It creates encrypted backup archives in the authorizing user's own Drive and can read or modify only the files it created. No Google user data is shared, sold or transferred to anyone; no analytics or tracking is used. Files stay in the user's Drive until the user deletes them; access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Use of Google API data complies with the Google API Services User Data Policy, including the Limited Use requirements.</p>
-<footer>Dernière mise à jour : 18 octobre 2026.</footer>
+<p>Pour toute question : <a href="https://github.com/FrancoisMaillat">FrancoisMaillat sur GitHub</a>.</p>
+
+<footer>
+<p><em>English summary:</em> This personal application requests only the <code>drive.file</code> scope and can therefore only create, list and verify files it created itself in the user's own Google Drive. Data is used solely to store and verify encrypted backup archives. Nothing is shared, sold or transferred to third parties; no analytics or trackers are used. Access can be revoked at any time at myaccount.google.com/permissions. Use of Google API data complies with the Google API Services User Data Policy, including the Limited Use requirements.</p>
+<p>Dernière mise à jour : 18 octobre 2026.</p>
+</footer>
 </body>
 </html>

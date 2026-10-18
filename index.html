@@ -3,24 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>eToro Monitoring Backup</title>
-<style>body{font-family:system-ui,sans-serif;max-width:46rem;margin:3rem auto;padding:0 1rem;line-height:1.5;color:#222}h1{font-size:1.6rem}footer{margin-top:3rem;font-size:.9rem;color:#666}</style>
+<title>eToro Monitoring Backup — outil personnel de sauvegarde chiffrée</title>
+<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#222}h1{font-size:1.5rem}footer{margin-top:2rem;font-size:.9rem;color:#555}</style>
 </head>
 <body>
 <h1>eToro Monitoring Backup</h1>
-<p><strong>eToro Monitoring Backup</strong> est un outil personnel, non commercial, utilisé par son auteur pour sauvegarder des archives chiffrées sur son propre espace Google Drive.</p>
+<p><strong>Outil personnel, non commercial.</strong> Cette application est un script de sauvegarde privé, utilisé par une seule personne, son auteur. Elle n'est ni distribuée, ni vendue, ni proposée à d'autres utilisateurs.</p>
 <h2>Ce que fait l'application</h2>
 <ul>
-<li>Elle transfère des archives de sauvegarde, chiffrées avant l'envoi, vers un dossier de Google Drive appartenant à l'utilisateur qui l'autorise.</li>
-<li>Elle utilise uniquement la portée Google Drive <code>drive.file</code> : elle ne voit et ne modifie que les fichiers qu'elle a elle-même créés.</li>
-<li>Elle n'a qu'un seul utilisateur : son auteur. Elle n'est ni distribuée ni proposée à des tiers.</li>
+  <li>Elle crée périodiquement une archive chiffrée de documents personnels de son auteur.</li>
+  <li>Elle dépose cette archive dans un dossier du Google Drive de l'auteur, puis vérifie que la copie est intacte.</li>
+  <li>Elle utilise l'API Google Drive avec la seule portée <code>drive.file</code> : elle n'accède qu'aux fichiers qu'elle a elle-même créés dans ce dossier, jamais au reste du Drive.</li>
 </ul>
-<h2>Données</h2>
-<p>L'application ne collecte, ne partage ni ne vend aucune donnée personnelle. Le détail figure dans la <a href="privacy.html">politique de confidentialité</a>.</p>
+<h2>Données et confidentialité</h2>
+<p>L'application ne collecte, ne partage et ne transmet aucune donnée à des tiers. Les archives sont chiffrées avant d'être envoyées et seul l'auteur détient la clé de déchiffrement. Détails : <a href="privacy.html">politique de confidentialité</a>.</p>
 <h2>Contact</h2>
-<p>Auteur : <a href="https://github.com/FrancoisMaillat">FrancoisMaillat</a> sur GitHub.</p>
-<hr>
-<p lang="en"><em>English summary.</em> eToro Monitoring Backup is a personal, non-commercial tool its author uses to upload encrypted backup archives to their own Google Drive. It requests only the <code>drive.file</code> scope, sees only the files it created, has a single user and shares no data with anyone. See the <a href="privacy.html">privacy policy</a>.</p>
-<footer>Dernière mise à jour : 18 octobre 2026.</footer>
+<p>Auteur et unique utilisateur : <a href="https://github.com/FrancoisMaillat">FrancoisMaillat sur GitHub</a>.</p>
+<footer>
+<p><em>English summary:</em> eToro Monitoring Backup is a personal, non-commercial backup script used by its author only. It uploads encrypted archives to the author's own Google Drive using the <code>drive.file</code> scope, which limits access to files the application itself created. No data is collected, shared or sold. See the <a href="privacy.html">privacy policy</a>.</p>
+<p>Dernière mise à jour : 18 octobre 2026.</p>
+</footer>
 </body>
 </html>
